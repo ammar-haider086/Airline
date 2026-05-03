@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airline Route System (Advanced)</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<h1>✈ Airline Route Optimization System</h1>
+
+<div class="panel">
+
+    <select id="start"></select>
+    <select id="end"></select>
+
+    <button onclick="findRoute()">Find Route</button>
+    <button onclick="resetSystem()">Reset</button>
+
+</div>
+
+<h3 id="result"></h3>
+
+<!-- ADD CITY -->
+<div class="panel">
+    <input id="city" placeholder="City Name">
+    <input id="lat" placeholder="Latitude">
+    <input id="lng" placeholder="Longitude">
+    <button onclick="addCity()">Add City</button>
+</div>
+
+<!-- MAP -->
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
